@@ -32,11 +32,11 @@ window.onload = function(){
     input.addEventListener(
         'input', ()=>{
             if(input.value.trim().length == 0){
-                hide_mark();
+                //hide_mark();
                 console.log("hide");
             }
             else{
-                show_mark();
+                //show_mark();
                 console.log("show");
             }
         }
@@ -115,22 +115,22 @@ function removeStopButton(){
     
     
 }
-function show_mark(){
-    let img_check = document.getElementById("check_mark");
-    if(img_check!=null){
-        img_check.style.visibility = 'visible';
-    }
-    img_check.onclick = function(){
-        let input = document.getElementById("input_label");
-        input.blur();
-        hide_mark();
-    }
-}
-function hide_mark(){
-    let img_check = document.getElementById("check_mark");
-    if(img_check != null){
-        img_check.style.visibility = 'hidden';
-    }
+// function show_mark(){
+//     let img_check = document.getElementById("check_mark");
+//     if(img_check!=null){
+//         img_check.style.visibility = 'visible';
+//     }
+//     img_check.onclick = function(){
+//         let input = document.getElementById("input_label");
+//         input.blur();
+//         hide_mark();
+//     }
+// }
+// function hide_mark(){
+//     let img_check = document.getElementById("check_mark");
+//     if(img_check != null){
+//         img_check.style.visibility = 'hidden';
+//     }
 
    
-}
+// }
