@@ -7,7 +7,7 @@ let interval;
 
 
 window.onload = function(){
-    hide_mark();
+    //hide_mark();
     let play_button = document.getElementById("play_stop");
     play_button.onclick = function(){
         if(is_paused == false){
