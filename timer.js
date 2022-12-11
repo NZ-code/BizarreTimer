@@ -50,7 +50,9 @@ function increment_time(){
 // function to set <p> to time str.
 function setTime(){
     const time = document.getElementById("stop_watch_time");
+    time.style.color = "white";
     let delta_time = Date.now() - last_start;
+
     delta_time += elapsed_ms;
     let sh_date = new Date();
     sh_date.setHours(0,0,0,0);
@@ -78,7 +80,11 @@ function setTime(){
     else{
         time.innerText =  minStr + ":" + secStr + ":" + millStr;
     }
-   
+}
+function setTimeDefault(){
+    const time = document.getElementById("stop_watch_time");
+    time.innerText = "00:00:00"
+    time.style.color = "#6D6D6D"
 }
 function addStopButton(){
     let buttons_div = document.getElementById("buttons_section");
@@ -103,7 +109,8 @@ function setDefault(){
     play_button.src = "./images/play.svg";
     clearInterval(interval);
     removeStopButton();
-    setTime(0);
+    setTimeDefault();
+
 
 }
 function removeStopButton(){
