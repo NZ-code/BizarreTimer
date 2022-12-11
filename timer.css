@@ -1,0 +1,87 @@
+:root{
+    --dark:#0F0F0F;
+    --secondary:#6D6D6D
+}
+@font-face {
+    font-family: 'SF UI Text';
+    src: url("/fonts/SFUIText-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: var(--dark);
+    color:white;
+    
+}
+header{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+  
+    color: #CCCCCC;
+}
+#time_container{
+    
+    color:var(--secondary);
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.time_options{
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+.time_options img{
+    font-size:20px;
+    margin: 12px;
+}
+
+.label_clock{
+
+    height: 70px;
+
+}
+
+.label_clock img{
+    height: 30px;;
+    
+    
+}
+.label_clock input{
+    height: 100%;
+    margin-left: 30%;
+    width: 40%;
+    border: none;
+    background:transparent;
+    color: white;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    
+}
+.label_clock input:focus{
+    outline: none;
+}
+
+.time{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 96px;
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+#buttons_section img{
+    margin: 12px;
+    cursor: pointer;
+}
